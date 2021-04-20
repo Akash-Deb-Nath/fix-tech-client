@@ -9,7 +9,7 @@ const AddReview = () => {
 
     const onSubmit = data => {
         console.log(data)
-        fetch('http://lit-brook-14009.herokuapp.com/addReview', {
+        fetch('https://lit-brook-14009.herokuapp.com/addReview', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)

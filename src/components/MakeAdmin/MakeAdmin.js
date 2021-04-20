@@ -6,7 +6,7 @@ const MakeAdmin = () => {
     const { register, handleSubmit, watch, errors } = useForm();
     const onSubmit = data => {
         console.log(data);
-        fetch('http://lit-brook-14009.herokuapp.com/makeAdmin', {
+        fetch('https://lit-brook-14009.herokuapp.com/makeAdmin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)

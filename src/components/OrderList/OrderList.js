@@ -5,7 +5,7 @@ import { Table } from 'react-bootstrap';
 const OrderList = () => {
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://lit-brook-14009.herokuapp.com/orderList')
+        fetch('https://lit-brook-14009.herokuapp.com/orderList')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])

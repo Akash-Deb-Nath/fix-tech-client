@@ -26,7 +26,7 @@ const Book = () => {
             paymentId
         }
         console.log(bookDetails);
-        fetch('http://lit-brook-14009.herokuapp.com/book', {
+        fetch('https://lit-brook-14009.herokuapp.com/book', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(bookDetails)
