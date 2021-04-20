@@ -7,7 +7,7 @@ const OrderList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5055/bookList?email=' + loggedInUser.email)
+        fetch('http://lit-brook-14009.herokuapp.com/bookList?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -35,7 +35,7 @@ const OrderList = () => {
                                     <td>{order.name}</td>
                                     <td>{order.email}</td>
                                     <td>{order.shipment.serviceName}</td>
-                                    <td>Status</td>
+                                    <td>Pending</td>
                                 </tr>
                             )
                         }

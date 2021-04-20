@@ -16,7 +16,7 @@ const AddService = () => {
             ...state,
             ImageURL: imageURL,
         }
-        const url = `http://localhost:5055/addService`;
+        const url = `http://lit-brook-14009.herokuapp.com/addService`;
         console.log(eventData);
         fetch(url, {
             method: "POST",
